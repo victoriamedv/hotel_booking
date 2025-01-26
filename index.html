@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="overlay"></div>
+      <h1>Hotel Booking</h1>
+      <p>Найдите идеальный отель для своего отдыха</p>
+    </header>
+
+    <main>
+      <!-- Фильтры -->
+      <section id="filters">
+        <h2>Поиск отеля</h2>
+
+        <!-- Даты -->
+        <section>
+          <h3>Даты поездки</h3>
+          <label>
+            Дата заезда:
+            <input type="date" id="checkin-date" required />
+          </label>
+          <label>
+            Дата выезда:
+            <input type="date" id="checkout-date" required />
+          </label>
+        </section>
+
+        <!-- Гости -->
+        <section>
+          <h3>Количество гостей</h3>
+          <label>
+            Количество гостей:
+            <input type="number" id="guests" min="1" value="1" required />
+          </label>
+        </section>
+
+        <!-- Бюджет -->
+        <section>
+          <h3>Бюджет</h3>
+          <label>
+            Бюджет (₽):
+            <input
+              type="range"
+              id="budget"
+              min="1000"
+              max="10000"
+              step="500"
+              value="5000"
+            />
+            <span id="budget-value">5000 ₽</span>
+          </label>
+        </section>
+
+        <button type="submit">Найти</button>
+      </section>
+
+      <!-- Карточки отелей -->
+      <section id="hotel-cards"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

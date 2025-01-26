@@ -30,7 +30,7 @@
 
 ---
 
-## Результаты
+## Результаты  
 
 ![image](https://github.com/user-attachments/assets/cd8899eb-956e-4492-aa61-67ee6775725c)  
 
